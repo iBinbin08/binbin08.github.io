@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emeroe Neneria's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="bg">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>   
+        <div class="header-text">
+            <header id="home">
+                <h2>Hi, I'm <span class="name">Emeroe Neñeria</span><br>From Iloilo City!</h2>
+                <p>Licensed Electronics Engineer | Virtual Assistant | Aspiring Full Stack Developer</p>
+            </header>
+        </div>
+    </div>
+</div>  
+<!-- -------------About---------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/emeroe1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">ABOUT ME</h1><br>
+                <h3>ENGR. EMEROE VEN BASYL M. NEÑERIA</h3><br>
+                <p>Licensed Electronics Engineer and Electronics Technician in the year 2018. In my thesis days, we have developed Integrated Fall Detector Device and System (iFall) wherein it can be used for elderly ages 65 years and above. The device continuously monitors subject’s movement, detect and predict the occurrence of a fall. For main components, we used a Bluetooth Module, Gizduino and 1Sheeld circuit boards. We were awarded with Best Paper at Central Philipine University 14th Research and Development Week. We also won Regional/National Qualifier at the 2017 Regional Invention Contests and Exhibits.</p><br>
+        
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Supervisory Skills</li>
+                        <li>Project Management</li>
+                        <li>Leadership</li>
+                        <li>Keen on details</li>
+                        <li>Strong work ethics</li>
+                        <li>Good communication skills</li>
+                        <li>Ability to quickly learn and very versatile</li>
+                        <li>Can work with less supervision</li>
+                        <li>Resourceful and have excellent research skills</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>September 2018 - January 2023</span><br>High Touch Smiles Outsourcing, Inc.</li>
+                        <li><span>April - May 2016<br></span>Home Radio 89.5 FM Station</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2012-2017</span><br>Philipine University</li>
+                        <li><span>2008-2012</span><br>Precious Gems Christian Academy</li>
+                        <li><span>1999-2008</span><br>Inter-Faith Christian Academy</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li>Online and Offline Computer Games</li>
+                        <li>Music</li>
+                        <li>Playing Basketball</li>
+                        <li>Watching Football and Basketball Games</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+<!-- -------------Gallery---------------- -->
+<div id="gallery">GALLERY</div>
+<div id="contact">CONTACT ME</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    </body>
+</html>
