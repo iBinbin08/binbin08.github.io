@@ -8,6 +8,7 @@
 body{
     background: black;
     color: white;
+    margin:auto;
 }
 
 #bg{
@@ -18,9 +19,55 @@ body{
     background-size: contain;
 }
 
-.container{
-    padding: 10px 5%;
-}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: #f1f1f1b2;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
 
 .logo{
     width: 70px;
@@ -56,11 +103,16 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 20px;
+    width: 100%;
+    display: inline-block;
 }
 
-.header-text h1{
+#home{
+    text-align: center;
+}
+
+.header-text h2{
     font-size: 60px;
-    margin-top: 20px;
 }
 .name{
     color: #5c2221;
@@ -70,19 +122,13 @@ nav ul li a:hover::after{
     padding: 80px 0;
     color: #5c2221;
 }
-.row{
+.row-about{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .about-col-1{
-    /* display: inline-flex !important; */
     flex-basis: 35%;
-    /* background: url(images/emeroe1.jpg);
-    background-size: contain;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    width: 100%; */
 }
 .about-col-1 img{
     width: 450px;
@@ -136,4 +182,28 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+/* -----Gallery----- */
+.row{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    padding-left: 15px;
+}
+.gallery{
+    padding: 3rem 12rem;
+}
+.fit-image > div > img {
+    width: 300px;
+    height: auto;
+}
+.img-grid img{
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+.img-grid img:hover{
+    box-shadow: 0 10px 40px 0 rgba(255, 255, 255, 5);
+    transition: 0.5s ease;
 }
