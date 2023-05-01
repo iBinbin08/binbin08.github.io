@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emeroe Neneria's Portfolio Website</title>
+    <title>Emeroe Neneria's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b4f88504e4.js" crossorigin="anonymous"></script>
 </head>
 
+<!-- -------------Home---------------- -->
 <body>
 <div id="bg">
     <div class="container">
@@ -42,7 +44,9 @@
             </header>
         </div>
     </div>
-</div>  
+</div>
+<!-- -------------End of Home Section---------------- -->
+
 <!-- -------------About---------------- -->
 <div id="about">
     <div class="container">
@@ -99,8 +103,14 @@
         </div>
     </div>
 </div><br>
+<!-- -------------End of About Section---------------- -->
+
 <!-- -------------Gallery---------------- -->
 <div id="gallery">
+    <div class="gallery-header">
+        <h2><span>GALLERY</span></h2><br>
+    </div>
+
     <!-- Image Grid Starts -->
     <div class="row img-grid">
         
@@ -132,21 +142,61 @@
         </div>
     </div>
 </div>
+<!-- -------------End of Gallery Section---------------- -->
 
+<!-- -------------Contact---------------- -->
+<div id="contact">
+    <div class="contact-header">
+        <h2><span>Contact Me</span></h2>
+    </div>
 
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <p><i class='bx bxs-edit-location'></i>Oton, Iloilo, Philippines</p>
+        <p><i class='bx bxs-phone'></i>+63 917 719 1429</p>
+        <p><i class='bx bxs-envelope'></i>e.neneria@gmail.com</p>
+    </div><br>
+    <div class="contact-message">
+        <p>Let's get in touch. Send me a message:</p>
+    </div>
 
+    <div class="contact-box">
+        <form>
+            <label for="name"></label>
+            <input type="text" id="name" class="input-field" name="name" placeholder="Name" required>
+            <input type="text" class="input-field" name="email" placeholder="Email" required>
+            <input type="text" class="input-field" name="subject" placeholder="Subject" required>
+            <textarea type="text" class="input-field textarea-field" name="message" placeholder="Message" required></textarea>
+            <input class="btn" type="submit" value="Send Message">
+        </form>
+    </div>
+</div>
+<!-- -------------End of Contact Section---------------- -->
 
-
-
-
-
-
-
-
-
-<div id="contact">CONTACT ME</div>
-
-
+<!-- -------------Footer---------------- -->
+<footer>
+    <div class="icons">
+        <p>© Binbin 2023</p>
+        <div class="social-links">
+            <a class="link facebook" href="https://www.facebook.com/e.neneria">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="link instagram" href="https://www.instagram.com/ismolgiant">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="link twitter" href="https://twitter.com/ismol_binbin">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="link linkedin" href="https://www.linkedin.com/in/engr-emeroe-ne%C3%B1eria-175103171/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="link github" href="https://github.com/iBinbin08/">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- -------------End of Footer Section---------------- -->
 
 
 
