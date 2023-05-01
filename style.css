@@ -21,8 +21,9 @@ body {
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 75px;
+    width: 80px;
     background-color: white;
+    /* opacity: .5; */
     position: fixed;
     height: 100%;
     overflow: hidden;
