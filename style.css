@@ -99,6 +99,8 @@ transition: all 0.5s ease;
 #about {
     padding: 80px 0;
     color: #5c2221;
+    width: 80%;
+    margin: auto;
 }
 .row-about {
     display: flex;
@@ -174,21 +176,20 @@ h3 {
 }
 
 /* -----Gallery----- */
-.gallery-header h2 span {
-    margin-left: 500px;
+.gallery-header h2 {
+    text-align: center;
     font-size: 60px;
     font-weight: bold;
     color: white;
     padding-bottom: 1px;
     caret-color: transparent;
-    
 }
 .row {
     display: flex;
     justify-content: center;
 }
 .column {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .gallery {
     padding: 3rem 12rem;
@@ -198,7 +199,7 @@ h3 {
     height: auto;
 }
 .img-grid img {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     transition: 0.5s ease;
 }
 .img-grid img:hover {
@@ -207,9 +208,13 @@ h3 {
 }
 
 /* -----Contact----- */
+#contact {
+    margin: auto;
+    width: 450px;
+}
 .contact-header {
-    margin-top: 100px;
-    margin-left: 500px;
+    margin-top: 200px;
+    margin-left: 20px;
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -219,21 +224,32 @@ h3 {
 
 .contact-section {
     display: inline-block;
-    margin-left: 495px;
     margin-top: 10px;
     caret-color: transparent;
 }
-.contact-box {
-    margin-left: 470px;
-    width: 500px;
+.download {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px 0;
 }
-form {
-    margin: 35px;
+.download a:link {
+    text-decoration: none;
+}
+.download a:visited {
+    text-decoration: none;
+    color: white;
+}
+.download a:hover {
+    text-decoration: none;
+}
+.download a:active {
+    text-decoration: none;
+}
+.contact-box {
+    margin-left: 25px;
 }
 .contact-message {
-    margin-left: 507px;
-    margin-top: 20px;
-    margin-bottom: -40px;
+    margin-left: 28px;
     color: gray;
 }
 .input-field {
@@ -265,7 +281,7 @@ form {
 
 /* -----Footer----- */
 .icons {
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -321,4 +337,14 @@ a:hover i {
 
 .linkedin:hover {
     color: #04009a;
+}
+
+
+/* -----Responsiveness----- */
+@media only screen and (min-width: 950px) {
+    #bg { width: 100%;}
+}
+
+@media only screen and (max-width: 950px) {
+    #bg { width: 100%;}
 }
