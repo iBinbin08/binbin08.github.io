@@ -12,6 +12,7 @@ body {
     margin:auto;
 }
 #bg {
+    width: 100%;
     height: 100vh;
     background-image: url(images/ven-b&w.png);
     background-position: right;
@@ -111,8 +112,8 @@ transition: all 0.5s ease;
     flex-basis: 35%;
 }
 .about-col-1 img {
-    width: 450px;
-    height: 800px;
+    width: 90%;
+    height: 100%;
     border-radius: 20px;
 }
 .about-col-2 {
@@ -130,7 +131,6 @@ h3 {
 }
 .about-col-2 > p {
     color: white;
-    font-size: 20;
 }
 .tab-titles {
     display: flex;
@@ -195,7 +195,7 @@ h3 {
     padding: 3rem 12rem;
 }
 .fit-image > div > img {
-    width: 300px;
+    width: 350px;
     height: auto;
 }
 .img-grid img {
@@ -341,10 +341,149 @@ a:hover i {
 
 
 /* -----Responsiveness----- */
-@media only screen and (min-width: 950px) {
-    #bg { width: 100%;}
+@media screen and (min-width: 950px) {
+    #bg { 
+        width: 100%;}
 }
+@media screen and (max-width: 950px) {
+    #bg { 
+        width: 100%;
+        height: 600px;
+    }
+    
+    .fit-image > div > img {
+        width: 200px;
+        height: auto;
+    }
 
-@media only screen and (max-width: 950px) {
-    #bg { width: 100%;}
+    .header-text {
+       font-size: 15px;
+    }
+    
+    .header-text h2 {
+        font-size: 40px;
+    }
+    
+    .about-col-1 img {
+        display: none;
+    }
+    .subtitle {
+        font-size: 55px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .about-col-2 > p {
+        color: white;
+        font-size: 15px;
+    }
+    .tab-links {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .tab-contents ul li {
+        font-size: 14px;
+    }
+    .tab-contents ul li span {
+        font-size: 12px;
+    }
+    #about {
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .header-text {
+       font-size: 12px;
+    }
+    .header-text {
+        padding-top: 70px;
+        padding-left: 50px;
+    }
+    .header-text h2 {
+        font-size: 35px;
+    }
+    .about-col-1 img {
+        display: none;
+    }
+    .subtitle {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .about-col-2 > p {
+        color: white;
+        font-size: 13px;
+    }
+    .tab-links {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .tab-contents ul li {
+        font-size: 13px;
+    }
+    .tab-contents ul li span {
+        font-size: 11px;
+    }
+    #about {
+        margin-left: 22%;
+    }
+    .fit-image > div > img {
+        width: 175px;
+        margin-left: 40%;
+    }
+    .gallery-header h2 {
+        font-size: 50px;
+        margin-left: 10%;
+    }
+    #contact {
+        margin: auto;
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 425px) {
+    #bg { 
+        height: 450px;
+    }
+    .contact-header {
+        font-size: 25px;
+        margin-top: 150px;
+    }
+    
+    .contact-section {
+        font-size: 14px;
+    }
+    .download {
+        font-size: 15px;
+    }
+    .contact-message {
+        font-size: 15px;
+    }
+    .input-field {
+        width: 350px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .textarea-field {
+        height: 100px;
+        font-size: 10px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .icons {
+        margin-left: 50%;
+    }
+    .fit-image > div > img {
+        width: 320px;
+        margin-left: 25%;
+    }
+    .row {
+        display: block;
+        width: 115%;
+    }
+    .gallery-header h2 {
+        font-size: 40px;
+        margin-left: 40%;
+    }
 }
